@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="box">
+        <div class="search">
+          <input
+            type="text"placeholder="Enter Place Name" spellcheck="false"
+          />
+          <button><img src="./images/search.png"></button>
+        </div>
+        <div class="error">
+          <p>Invalid city name</p>
+        </div>
+        <div id="weather">
+          <img class="weather-icon" src="images/rain.png" />
+          <h1 class="temp">22°c</h1>
+          <h2 class="place">New York</h2>
+
+          <div class="details">
+            <div class="col">
+              <img src="images/humidity.png" />
+              <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+            </div>
+            </div>
+            <div class="col">
+              <img src="images/wind.png" />
+              <div>
+                <p class="wind">20 Km/H</p>
+                <p>Wind Speed</p>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
