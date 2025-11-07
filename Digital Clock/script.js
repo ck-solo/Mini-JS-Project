@@ -1,4 +1,4 @@
-let hrs = document.getElementById("hrs");
+let hours = document.getElementById("hours");
 let min = document.getElementById("min");
 let sec = document.getElementById("sec");
 
@@ -15,7 +15,7 @@ setInterval(() => {
   minutes = (minutes < 10 ? "0" : "") + minutes;
   seconds = (seconds < 10 ? "0" : "") + seconds;
   
-  hrs.innerHTML = hours;
+  hours.innerHTML = hours;
   min.innerHTML = minutes;
   sec.innerHTML = seconds;
 }, 1000);
