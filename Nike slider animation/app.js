@@ -19,12 +19,12 @@ const startAutoPlay = () => {
 startAutoPlay();
 
 const setSlider = () => {
-    let itemActiveOld = carousel.querySelector('.list .item.active');
-    if(itemActiveOld) itemActiveOld.classList.remove('active');
+    let itemIsActiveOld = carousel.querySelector('.list .item.active');
+    if(itemIsActiveOld) itemIsActiveOld.classList.remove('active');
     items[active].classList.add('active');
 
-    let dotActiveOld = indicator.querySelector('.indicators ul li.active');
-    if(dotActiveOld) dotActiveOld.classList.remove('active');
+    let dotIsActiveOld = indicator.querySelector('.indicators ul li.active');
+    if(dotIsActiveOld) dotIsActiveOld.classList.remove('active');
     dots[active].classList.add('active');
 
     indicator.querySelector('.number').innerText = '0' + (active + 1);
